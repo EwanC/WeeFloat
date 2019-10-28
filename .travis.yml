@@ -1,0 +1,14 @@
+language: cpp
+dist: xenial
+
+compiler:
+  - gcc
+  - clang
+
+script:
+  - mkdir build
+  - cd build
+  - mkdir install
+  - cmake ../
+  - make wee_float_tests
+  - ./wee_float_tests
